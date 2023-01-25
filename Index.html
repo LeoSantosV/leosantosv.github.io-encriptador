@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <a href="Index.html"></a>
+        <img class="logo-alura" src="img/logo-alura.png" alt="Logo da Alura">
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="entrada-txt">
+                <div class="digite-txt">
+                    <textarea name="txt-input" id="text-input" cols="40" rows="15" placeholder="Digite seu texto..."></textarea>
+                </div>
+            
+                <div class="botoes">
+                    <button class="btn-encriptar" onclick="btnCri()">Criptografar</button>
+            
+                    <button class="btn-desencriptografar" onclick="btnDescri()">Desencriptrografar</button>
+                </div>    
+            </div>
+
+            <div class="saida">
+                <div class="result-vazio">
+                    <img id="img" src="img/procurando.png" alt="Imagem de procura" width="40%">
+                    <h2 id="h2-resultado">
+                        Nenhuma mensagem encontrada
+                    </h2>
+                </div>
+                <div class="result-ok">
+                    <textarea id="text-output" cols="30" rows="20"></textarea>
+                    <button class="btn-copiar" onclick="copiarTexto()">Copiar texto</button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p class="copyright">&copy; Copyright Leonardo Ventura - Desenvolvedor</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+    
